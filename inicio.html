@@ -1,0 +1,324 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Início - Portal dos Direitos Humanos</title>
+    <meta name="description" content="Informações sobre os direitos humanos: educação, saúde, liberdade, igualdade, moradia e trabalho.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+   
+    <div class="barra-topo">Portal demonstrativo de informação e cidadania</div>
+
+    <header class="cabecalho-portal">
+        <div class="marca">
+            <a href="inicio.html" class="logo-link">
+                <img
+                    src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=150&q=85"
+                    alt="Pessoas reunidas representando união"
+                    width="56"
+                    height="56"
+                    style="object-fit: cover; border-radius: 50%;"
+                >
+                <span>Portal dos Direitos Humanos</span>
+            </a>
+
+            <form id="form-busca" class="busca" role="search">
+                <label for="busca" class="sr">Pesquisar no portal</label>
+                <input type="search" id="busca" placeholder="Pesquisar: educação, saúde, racismo...">
+                <button type="submit">Pesquisar</button>
+            </form>
+        </div>
+
+        <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="menu-principal">Menu</button>
+
+        <nav id="menu-principal" class="menu" aria-label="Menu principal">
+            <ul>
+                <li><a href="inicio.html" aria-current="page">Início</a></li>
+                <li><a href="educacao.html">Educação</a></li>
+                <li><a href="saude.html">Saúde</a></li>
+                <li><a href="liberdade.html">Liberdade</a></li>
+                <li><a href="igualdade.html">Igualdade</a></li>
+                <li><a href="moradia.html">Moradia</a></li>
+                <li><a href="trabalho.html">Trabalho</a></li>
+                <li><a href="#saiba-mais">Saiba Mais</a></li>
+                <li><a href="index.html">Sair</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="resultados-busca" class="resultados" hidden></div>
+
+    <main id="conteudo">
+
+        <section class="banner" aria-labelledby="titulo-banner">
+            <div>
+                <h1 id="titulo-banner">Direitos Humanos: direitos de todos</h1>
+
+                <p>
+                    Os direitos humanos garantem a dignidade, a liberdade e a igualdade de todas as pessoas, sem distinção de origem, raça, sexo, religião ou qualquer outra condição. Conheça cada um deles e onde buscar informações oficiais.
+                </p>
+
+                <a class="botao botao-claro" href="educacao.html">Conhecer os temas</a>
+                <a class="botao botao-claro" href="#saiba-mais">Saiba mais</a>
+            </div>
+
+            <img
+                src="https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?auto=format&fit=crop&w=1200&q=85"
+                alt="Grupo de pessoas reunidas em atividade coletiva, representando união e respeito"
+            >
+        </section>
+
+        <section class="bloco" aria-labelledby="titulo-importancia">
+            <h2 id="titulo-importancia">Por que os direitos humanos são importantes?</h2>
+
+            <p>
+                Os direitos humanos são o conjunto de garantias que protegem cada pessoa contra injustiças, violência e discriminação. Foram reconhecidos internacionalmente com a <strong>Declaração Universal dos Direitos Humanos</strong>, adotada pela Assembleia Geral da ONU em 10 de dezembro de 1948.
+            </p>
+
+            <p>
+                No Brasil, esses direitos estão reunidos principalmente na Constituição Federal de 1988, que coloca a dignidade da pessoa humana como um dos fundamentos do país. Conhecer esses direitos é o primeiro passo para exigi-los e para respeitar o direito dos outros.
+            </p>
+        </section>
+
+        <section class="bloco" aria-labelledby="titulo-temas">
+            <h2 id="titulo-temas">Temas do portal</h2>
+
+            <p>
+                Escolha um tema para ver explicações, leis que o garantem e links para fontes oficiais.
+            </p>
+
+            <div class="grade-temas">
+
+                <article class="card-tema">
+                    <img
+                        src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=900&q=85"
+                        alt="Sala de aula com estudantes aprendendo"
+                    >
+
+                    <div class="corpo">
+                        <span class="icone" aria-hidden="true">📚</span>
+                        <h3>Direito à Educação</h3>
+                        <p>Ensino de qualidade, gratuito e acessível a todas as pessoas, em todas as etapas.</p>
+                        <a class="botao" href="educacao.html">Abrir página</a>
+                    </div>
+                </article>
+
+                <article class="card-tema">
+                    <img
+                        src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=900&q=85"
+                        alt="Profissional da saúde realizando atendimento"
+                    >
+
+                    <div class="corpo">
+                        <span class="icone" aria-hidden="true">🩺</span>
+                        <h3>Direito à Saúde</h3>
+                        <p>Acesso universal e igualitário aos serviços de saúde, com o SUS como base.</p>
+                        <a class="botao" href="saude.html">Abrir página</a>
+                    </div>
+                </article>
+
+                <article class="card-tema">
+                    <img
+                        src="https://images.unsplash.com/photo-1490730141103-6cac27aaab94?auto=format&fit=crop&w=900&q=85"
+                        alt="Pássaros voando livremente no céu"
+                    >
+
+                    <div class="corpo">
+                        <span class="icone" aria-hidden="true">🕊️</span>
+                        <h3>Direito à Liberdade</h3>
+                        <p>Liberdade de expressão, de pensamento e de crença, com respeito às opiniões diferentes.</p>
+                        <a class="botao" href="liberdade.html">Abrir página</a>
+                    </div>
+                </article>
+
+                <article class="card-tema">
+                    <img
+                        src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&w=900&q=85"
+                        alt="Grupo diverso de pessoas reunidas"
+                    >
+
+                    <div class="corpo">
+                        <span class="icone" aria-hidden="true">⚖️</span>
+                        <h3>Direito à Igualdade</h3>
+                        <p>Igualdade entre as pessoas, combate ao racismo e à discriminação e respeito à diversidade.</p>
+                        <a class="botao" href="igualdade.html">Abrir página</a>
+                    </div>
+                </article>
+
+                <article class="card-tema">
+                    <img
+                        src="https://images.unsplash.com/photo-1449158743715-0a90ebb6d2d8?auto=format&fit=crop&w=900&q=85"
+                        alt="Casas representando o direito à moradia"
+                    >
+
+                    <div class="corpo">
+                        <span class="icone" aria-hidden="true">🏠</span>
+                        <h3>Direito à Moradia</h3>
+                        <p>Moradia digna, com segurança, saneamento básico e políticas públicas de habitação.</p>
+                        <a class="botao" href="moradia.html">Abrir página</a>
+                    </div>
+                </article>
+
+                <article class="card-tema">
+                    <img
+                        src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=900&q=85"
+                        alt="Pessoas trabalhando juntas em um ambiente profissional"
+                    >
+
+                    <div class="corpo">
+                        <span class="icone" aria-hidden="true">💼</span>
+                        <h3>Direito ao Trabalho</h3>
+                        <p>Trabalho digno, direitos trabalhistas, igualdade de oportunidades e combate à exploração.</p>
+                        <a class="botao" href="trabalho.html">Abrir página</a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <section class="bloco" aria-labelledby="titulo-info">
+            <h2 id="titulo-info">Informações e datas importantes</h2>
+
+            <p>Datas que lembram compromissos internacionais e nacionais com os direitos humanos.</p>
+
+            <div class="lista-info">
+
+                <article class="info">
+                    <span class="data">10 de dezembro</span>
+                    <h3>Dia Internacional dos Direitos Humanos</h3>
+                    <p>Data que marca a adoção da Declaração Universal dos Direitos Humanos pela ONU, em 1948.</p>
+                </article>
+
+                <article class="info">
+                    <span class="data">21 de março</span>
+                    <h3>Dia Internacional para a Eliminação da Discriminação Racial</h3>
+                    <p>Lembra a necessidade de combater o racismo e todas as formas de discriminação racial.</p>
+                </article>
+
+                <article class="info">
+                    <span class="data">Artigo 1º</span>
+                    <h3>Todas as pessoas nascem livres e iguais</h3>
+                    <p>A Declaração Universal começa afirmando que todos os seres humanos nascem livres e iguais em dignidade e direitos.</p>
+                </article>
+
+            </div>
+        </section>
+
+        <section class="bloco" id="denuncias" aria-labelledby="titulo-denuncias">
+            <h2 id="titulo-denuncias">Onde denunciar violações</h2>
+
+            <p>Se você presenciar ou sofrer uma violação de direitos, procure os canais oficiais de denúncia:</p>
+
+            <ul>
+                <li><strong>Disque 100:</strong> canal nacional de denúncias de violações de direitos humanos, com atendimento gratuito.</li>
+                <li><strong>Ligue 180:</strong> canal de atendimento e denúncia de violência contra a mulher.</li>
+                <li><strong>Emergência:</strong> em risco imediato, ligue 190 (Polícia Militar) ou 192 (SAMU).</li>
+            </ul>
+
+            <p class="nota">Confirme os números e canais atualizados nos sites oficiais do Ministério dos Direitos Humanos.</p>
+        </section>
+
+        <section class="bloco" id="saiba-mais" aria-labelledby="titulo-saiba">
+            <h2 id="titulo-saiba">Saiba Mais: fontes oficiais</h2>
+
+            <p>Os links abaixo levam a instituições e documentos oficiais. Eles abrem em uma nova aba.</p>
+
+            <ul class="grade-links">
+                <li>
+                    <a class="link-oficial" href="https://www.un.org/" target="_blank" rel="noopener noreferrer">
+                        <strong>ONU</strong>
+                        <span>Organização das Nações Unidas</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="link-oficial" href="https://www.unicef.org/brazil/" target="_blank" rel="noopener noreferrer">
+                        <strong>UNICEF Brasil</strong>
+                        <span>Direitos da infância e da adolescência</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="link-oficial" href="https://www.gov.br/mdh/pt-br" target="_blank" rel="noopener noreferrer">
+                        <strong>Ministério dos Direitos Humanos</strong>
+                        <span>gov.br/mdh</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="link-oficial" href="https://www.gov.br/" target="_blank" rel="noopener noreferrer">
+                        <strong>Governo Federal</strong>
+                        <span>Portal gov.br</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="link-oficial" href="https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm" target="_blank" rel="noopener noreferrer">
+                        <strong>Constituição Federal</strong>
+                        <span>Texto completo de 1988 no Planalto</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="link-oficial" href="https://www.ohchr.org/pt" target="_blank" rel="noopener noreferrer">
+                        <strong>ACNUDH</strong>
+                        <span>Alto Comissariado da ONU para os Direitos Humanos</span>
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer class="rodape-portal">
+
+        <div class="rodape-grade">
+
+            <div>
+                <h2>Portal dos Direitos Humanos</h2>
+                <p>Informação, cidadania e igualdade para todos. Projeto de demonstração com fins educativos.</p>
+            </div>
+
+            <div>
+                <h2>Temas</h2>
+                <ul>
+                    <li><a href="educacao.html">Educação</a></li>
+                    <li><a href="saude.html">Saúde</a></li>
+                    <li><a href="liberdade.html">Liberdade</a></li>
+                    <li><a href="igualdade.html">Igualdade</a></li>
+                    <li><a href="moradia.html">Moradia</a></li>
+                    <li><a href="trabalho.html">Trabalho</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h2>Links úteis</h2>
+                <ul>
+                    <li><a href="https://www.un.org/" target="_blank" rel="noopener noreferrer">ONU</a></li>
+                    <li><a href="https://www.gov.br/mdh/pt-br" target="_blank" rel="noopener noreferrer">Ministério dos Direitos Humanos</a></li>
+                    <li><a href="https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm" target="_blank" rel="noopener noreferrer">Constituição Federal</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h2>Aviso</h2>
+                <p>Este portal tem caráter informativo e educativo e não substitui orientação jurídica. Para casos específicos, procure a Defensoria Pública ou um advogado.</p>
+            </div>
+
+        </div>
+
+        <p class="rodape-base">
+            © 2026 Portal dos Direitos Humanos. Todos os direitos reservados.
+            <a href="index.html">Voltar à tela de entrada</a>
+        </p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

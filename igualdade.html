@@ -1,0 +1,418 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Direito à Igualdade - Portal dos Direitos Humanos</title>
+
+    <meta name="description" content="Igualdade entre as pessoas, combate ao racismo e à discriminação, respeito à diversidade e igualdade de oportunidades.">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    
+
+    <div class="barra-topo">
+        Portal demonstrativo de informação e cidadania
+    </div>
+
+    <!-- CABEÇALHO -->
+    <header class="cabecalho-portal">
+
+        <div class="marca">
+
+            <a href="inicio.html" class="logo-link">
+                <img src="imagens/logo.svg" alt="" width="56" height="56">
+                <span>Portal dos Direitos Humanos</span>
+            </a>
+
+            <form id="form-busca" class="busca" role="search">
+
+                <label for="busca" class="sr">
+                    Pesquisar no portal
+                </label>
+
+                <input
+                    type="search"
+                    id="busca"
+                    placeholder="Pesquisar: educação, saúde, racismo...">
+
+                <button type="submit">Pesquisar</button>
+
+            </form>
+
+        </div>
+
+        <button
+            type="button"
+            class="menu-toggle"
+            aria-expanded="false"
+            aria-controls="menu-principal">
+            Menu
+        </button>
+
+        <nav id="menu-principal" class="menu" aria-label="Menu principal">
+
+            <ul>
+                <li><a href="inicio.html">Início</a></li>
+                <li><a href="educacao.html">Educação</a></li>
+                <li><a href="saude.html">Saúde</a></li>
+                <li><a href="liberdade.html">Liberdade</a></li>
+                <li><a href="igualdade.html" aria-current="page">Igualdade</a></li>
+                <li><a href="moradia.html">Moradia</a></li>
+                <li><a href="trabalho.html">Trabalho</a></li>
+                <li><a href="inicio.html#saiba-mais">Saiba Mais</a></li>
+                <li><a href="index.html">Sair</a></li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <div id="resultados-busca" class="resultados" hidden></div>
+
+    <main id="conteudo">
+
+        <p class="migalhas">
+            <a href="inicio.html">Início</a> / Direito à Igualdade
+        </p>
+
+        <!-- BANNER PRINCIPAL -->
+        <section class="hero-tema" aria-labelledby="titulo-tema">
+
+            <div>
+
+                <span class="etiqueta">Tema 4 de 6</span>
+
+                <h1 id="titulo-tema">Direito à Igualdade</h1>
+
+                <p class="lead">
+                    Todas as pessoas são iguais perante a lei. Combater o racismo e a discriminação é responsabilidade de todos.
+                </p>
+
+                <div class="acoes">
+
+                    <a class="botao" href="inicio.html">
+                        ← Voltar ao início
+                    </a>
+
+                    <a class="botao botao-claro" href="#saiba-mais">
+                        Saiba Mais
+                    </a>
+
+                </div>
+
+            </div>
+
+            <img
+                src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1200&q=85"
+                alt="Grupo de pessoas reunidas representando união e diversidade"
+                loading="eager">
+
+        </section>
+
+        <!-- IGUALDADE ENTRE TODAS AS PESSOAS -->
+        <section class="bloco" id="igualdade-todas" aria-labelledby="t-igual">
+
+            <h2 id="t-igual">Igualdade entre todas as pessoas</h2>
+
+            <p>
+                A Declaração Universal dos Direitos Humanos afirma, no artigo 2º, que todas as pessoas têm direitos e liberdades sem distinção de qualquer espécie, como raça, cor, sexo, língua, religião, opinião, origem nacional ou social, posição econômica ou outra condição.
+            </p>
+
+            <p>
+                A Constituição Federal de 1988 diz, no caput do artigo 5º, que todos são iguais perante a lei, sem distinção de qualquer natureza. Entre os objetivos da República, o artigo 3º, inciso IV, prevê promover o bem de todos, sem preconceitos de origem, raça, sexo, cor, idade e quaisquer outras formas de discriminação.
+            </p>
+
+        </section>
+
+        <!-- GALERIA DE IMAGENS -->
+        <section class="bloco" aria-labelledby="titulo-galeria">
+
+            <h2 id="titulo-galeria">Igualdade e respeito à diversidade</h2>
+
+            <p>
+                Uma sociedade justa valoriza as diferenças, respeita todas as pessoas e oferece oportunidades iguais.
+            </p>
+
+            <div class="grade-temas">
+
+                <article class="card-tema">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=900&q=85"
+                        alt="Pessoas reunidas em um momento de convivência"
+                        loading="lazy">
+
+                    <div class="corpo">
+
+                        <h3>União e respeito</h3>
+
+                        <p>
+                            Todas as pessoas merecem respeito, independentemente de suas diferenças.
+                        </p>
+
+                    </div>
+
+                </article>
+
+                <article class="card-tema">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&w=900&q=85"
+                        alt="Grupo de pessoas compartilhando momentos de convivência"
+                        loading="lazy">
+
+                    <div class="corpo">
+
+                        <h3>Diversidade</h3>
+
+                        <p>
+                            A diversidade torna a sociedade mais rica, inclusiva e acolhedora.
+                        </p>
+
+                    </div>
+
+                </article>
+
+                <article class="card-tema">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&w=900&q=85"
+                        alt="Jovens reunidos em atividade coletiva"
+                        loading="lazy">
+
+                    <div class="corpo">
+
+                        <h3>Oportunidades iguais</h3>
+
+                        <p>
+                            Todas as pessoas devem ter oportunidades de estudar, trabalhar e participar da sociedade.
+                        </p>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- COMBATE AO RACISMO -->
+        <section class="bloco" id="racismo" aria-labelledby="t-racismo">
+
+            <h2 id="t-racismo">Combate ao racismo e à discriminação</h2>
+
+            <p>
+                O racismo é crime no Brasil. O artigo 5º, inciso XLII, da Constituição o define como crime inafiançável e imprescritível, ou seja, não pode ser pago com fiança e a punição não prescreve com o tempo.
+            </p>
+
+            <p>
+                A Lei nº 7.716/1989 define os crimes resultantes de preconceito de raça ou de cor. O Estatuto da Igualdade Racial, Lei nº 12.288/2010, estabelece diretrizes para promover a igualdade de oportunidades e combater a discriminação racial e as desigualdades étnicas.
+            </p>
+
+            <div class="destaque-texto">
+                21 de março é o Dia Internacional para a Eliminação da Discriminação Racial, data que lembra a necessidade de combater o racismo em todas as suas formas.
+            </div>
+
+            <h3>Como agir diante de um caso de racismo</h3>
+
+            <ul>
+
+                <li>
+                    Registre a ocorrência em uma delegacia. Se possível, guarde provas, como prints, vídeos e nomes de testemunhas.
+                </li>
+
+                <li>
+                    Denuncie pelo Disque 100, que atende violações de direitos humanos em todo o país.
+                </li>
+
+                <li>
+                    Procure a Defensoria Pública da sua região para orientação jurídica gratuita.
+                </li>
+
+            </ul>
+
+        </section>
+
+        <!-- RESPEITO À DIVERSIDADE -->
+        <section class="bloco" id="diversidade" aria-labelledby="t-div">
+
+            <h2 id="t-div">Respeito à diversidade</h2>
+
+            <p>
+                Diversidade é a convivência com pessoas de diferentes origens, idades, culturas, gêneros, orientações, religiões e condições físicas. Respeitá-la significa reconhecer que essas diferenças não diminuem o valor de ninguém.
+            </p>
+
+            <h3>Leis que protegem grupos específicos</h3>
+
+            <ul>
+
+                <li>
+                    <strong>Pessoas com deficiência:</strong>
+                    Lei nº 13.146/2015 (Estatuto da Pessoa com Deficiência), que garante acessibilidade, educação inclusiva e participação plena na vida social.
+                </li>
+
+                <li>
+                    <strong>Pessoas idosas:</strong>
+                    Lei nº 10.741/2003 (Estatuto do Idoso), que garante prioridade no atendimento e proteção contra abandono e violência.
+                </li>
+
+                <li>
+                    <strong>Mulheres:</strong>
+                    Lei nº 11.340/2006 (Lei Maria da Penha), que cria mecanismos para coibir a violência doméstica e familiar.
+                </li>
+
+            </ul>
+
+        </section>
+
+        <!-- IGUALDADE DE OPORTUNIDADES -->
+        <section class="bloco" id="oportunidades" aria-labelledby="t-opor">
+
+            <h2 id="t-opor">Igualdade de oportunidades</h2>
+
+            <p>
+                Igualdade de oportunidades significa que a origem de uma pessoa não deve determinar o seu futuro. Para isso, a Constituição proíbe diferenças de salário e de critérios de contratação por motivo de sexo, idade, cor ou estado civil (art. 7º, XXX), além de discriminação contra pessoas com deficiência (art. 7º, XXXI).
+            </p>
+
+            <p>
+                Na educação, a Lei nº 12.711/2012 reserva parte das vagas das universidades e institutos federais para estudantes de escola pública, com critérios de renda e de autodeclaração racial e de pessoas com deficiência.
+            </p>
+
+            <p class="nota">
+                Os critérios de cada política de cotas podem mudar. Confirme as regras atuais nos sites oficiais.
+            </p>
+
+        </section>
+
+        <!-- FONTES OFICIAIS -->
+        <section class="bloco" id="saiba-mais" aria-labelledby="t-saiba">
+
+            <h2 id="t-saiba">Saiba Mais: fontes oficiais</h2>
+
+            <p>
+                Os links abaixo abrem em uma nova aba e levam a fontes oficiais sobre igualdade e combate à discriminação.
+            </p>
+
+            <ul class="grade-links">
+
+                <li>
+                    <a class="link-oficial" href="https://www.planalto.gov.br/ccivil_03/leis/l7716.htm" target="_blank" rel="noopener noreferrer">
+                        <strong>Lei nº 7.716/1989</strong>
+                        <span>Crimes resultantes de preconceito de raça ou cor</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="link-oficial" href="https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2010/lei/l12288.htm" target="_blank" rel="noopener noreferrer">
+                        <strong>Estatuto da Igualdade Racial</strong>
+                        <span>Lei nº 12.288/2010</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="link-oficial" href="https://www.gov.br/mdh/pt-br" target="_blank" rel="noopener noreferrer">
+                        <strong>Ministério dos Direitos Humanos</strong>
+                        <span>Políticas de igualdade e canais de denúncia</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="link-oficial" href="https://www.ohchr.org/pt" target="_blank" rel="noopener noreferrer">
+                        <strong>ACNUDH</strong>
+                        <span>Combate à discriminação racial na ONU</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="link-oficial" href="https://www.un.org/pt/about-us/universal-declaration-of-human-rights" target="_blank" rel="noopener noreferrer">
+                        <strong>Declaração Universal dos Direitos Humanos</strong>
+                        <span>Artigo 2º sobre não discriminação</span>
+                    </a>
+                </li>
+
+            </ul>
+
+        </section>
+
+        <!-- VOLTAR -->
+        <div class="voltar-rodape">
+
+            <a class="botao" href="inicio.html">
+                ← Voltar ao início
+            </a>
+
+        </div>
+
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer class="rodape-portal">
+
+        <div class="rodape-grade">
+
+            <div>
+                <h2>Portal dos Direitos Humanos</h2>
+
+                <p>
+                    Informação, cidadania e igualdade para todos. Projeto de demonstração com fins educativos.
+                </p>
+            </div>
+
+            <div>
+                <h2>Temas</h2>
+
+                <ul>
+                    <li><a href="educacao.html">Educação</a></li>
+                    <li><a href="saude.html">Saúde</a></li>
+                    <li><a href="liberdade.html">Liberdade</a></li>
+                    <li><a href="igualdade.html">Igualdade</a></li>
+                    <li><a href="moradia.html">Moradia</a></li>
+                    <li><a href="trabalho.html">Trabalho</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h2>Links úteis</h2>
+
+                <ul>
+                    <li>
+                        <a href="https://www.un.org/" target="_blank" rel="noopener noreferrer">ONU</a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.gov.br/mdh/pt-br" target="_blank" rel="noopener noreferrer">Ministério dos Direitos Humanos</a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.gov.br/" target="_blank" rel="noopener noreferrer">Governo Federal</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <h2>Aviso</h2>
+
+                <p>
+                    Este portal tem caráter informativo e educativo e não substitui orientação jurídica.
+                </p>
+            </div>
+
+        </div>
+
+        <p class="rodape-base">
+            © 2026 Portal dos Direitos Humanos. Todos os direitos reservados.
+            <a href="index.html">Voltar à tela de entrada</a>
+        </p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
