@@ -1,0 +1,500 @@
+
+/* ==========================================================
+   PORTAL DOS DIREITOS HUMANOS
+   LOGIN - DESIGN MODERNO E ELEGANTE
+   CORES: VINHO, DOURADO E CREME
+========================================================== */
+
+/* FUNDO DA PÁGINA */
+
+body.pagina-login {
+    background:
+        radial-gradient(
+            circle at 10% 15%,
+            rgba(197, 164, 109, 0.13),
+            transparent 30%
+        ),
+        linear-gradient(
+            145deg,
+            #f6f1ec 0%,
+            #fffdf9 55%,
+            #f0e5e2 100%
+        );
+
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* BARRA SUPERIOR */
+
+.login-topo {
+    background: var(--vinho-escuro);
+    color: var(--dourado-claro);
+    text-align: center;
+    font-size: 13px;
+    padding: 11px 20px;
+    letter-spacing: 1.3px;
+    font-weight: 600;
+    border-bottom: 3px solid var(--dourado);
+}
+
+/* ÁREA PRINCIPAL */
+
+.login-principal {
+    flex: 1;
+
+    display: grid;
+    grid-template-columns:
+        minmax(300px, 440px)
+        minmax(280px, 520px);
+
+    gap: 55px;
+    align-items: center;
+    justify-content: center;
+
+    padding: 45px 25px;
+
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* CARTÃO DE LOGIN */
+
+.login-cartao {
+    position: relative;
+
+    background: var(--creme);
+    border: 1px solid var(--borda);
+    border-top: 5px solid var(--vinho);
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 12px 35px rgba(66, 27, 43, 0.09),
+        0 3px 10px rgba(66, 27, 43, 0.04);
+
+    padding: 38px 35px;
+
+    transition: all 0.3s ease;
+}
+
+.login-cartao:hover {
+    box-shadow:
+        0 16px 42px rgba(66, 27, 43, 0.13),
+        0 4px 12px rgba(66, 27, 43, 0.05);
+}
+
+/* CABEÇALHO DO LOGIN */
+
+.login-cabecalho {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.login-cabecalho img {
+    width: 82px;
+    height: 82px;
+
+    margin: 0 auto 16px;
+
+    object-fit: cover;
+    border-radius: 50%;
+
+    border: 4px solid var(--dourado-claro);
+
+    box-shadow:
+        0 5px 15px rgba(66, 27, 43, 0.12);
+}
+
+.login-cabecalho h1 {
+    font-size: 25px;
+    font-weight: 750;
+
+    color: var(--vinho-escuro);
+
+    line-height: 1.25;
+    letter-spacing: -0.5px;
+}
+
+.login-cabecalho p {
+    color: var(--texto-suave);
+    font-size: 14px;
+    margin-top: 9px;
+}
+
+/* CAMPOS DO FORMULÁRIO */
+
+.campo-login {
+    margin-bottom: 20px;
+}
+
+.campo-login label {
+    display: block;
+
+    font-weight: 650;
+    color: var(--vinho-escuro);
+
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.campo-login input {
+    width: 100%;
+
+    padding: 14px 16px;
+
+    border: 1px solid #dfd0cc;
+    border-radius: 10px;
+
+    font-size: 15px;
+    font-family: inherit;
+
+    background: #fffdfb;
+    color: var(--texto);
+
+    transition: all 0.25s ease;
+}
+
+.campo-login input::placeholder {
+    color: #a99ba0;
+}
+
+.campo-login input:hover {
+    border-color: var(--dourado);
+}
+
+.campo-login input:focus {
+    outline: none;
+
+    border-color: var(--vinho);
+
+    background: white;
+
+    box-shadow:
+        0 0 0 4px rgba(114, 47, 69, 0.10);
+}
+
+/* BOTÕES */
+
+.login-cartao .botao {
+    background: var(--vinho);
+    color: white;
+
+    border: 1px solid var(--vinho);
+    border-radius: 30px;
+
+    padding: 13px 22px;
+
+    font-size: 15px;
+    font-weight: 700;
+
+    cursor: pointer;
+    text-decoration: none;
+
+    transition: all 0.3s ease;
+}
+
+.login-cartao .botao:hover {
+    background: var(--vinho-escuro);
+    border-color: var(--vinho-escuro);
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 6px 15px rgba(66, 27, 43, 0.18);
+}
+
+.login-cartao .botao-claro {
+    background: transparent;
+    color: var(--vinho);
+
+    border: 1px solid var(--vinho);
+}
+
+.login-cartao .botao-claro:hover {
+    background: var(--vinho);
+    color: white;
+}
+
+.botao-largo {
+    width: 100%;
+    display: block;
+
+    text-align: center;
+
+    padding: 14px;
+    font-size: 16px;
+
+    margin-top: 8px;
+}
+
+/* LINKS DO LOGIN */
+
+.links-login {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    flex-wrap: wrap;
+    gap: 12px;
+
+    margin-top: 23px;
+
+    font-size: 14px;
+}
+
+.links-login a {
+    color: var(--vinho);
+    font-weight: 700;
+
+    text-decoration: none;
+
+    transition: all 0.2s ease;
+}
+
+.links-login a:hover {
+    color: var(--vinho-claro);
+    text-decoration: underline;
+}
+
+/* PAINÉIS EXTRAS */
+
+.painel-extra {
+    margin-top: 25px;
+
+    padding: 23px;
+
+    background: #faf4f0;
+
+    border: 1px solid var(--borda);
+    border-left: 5px solid var(--dourado);
+
+    border-radius: 13px;
+
+    animation: aparecer 0.3s ease;
+}
+
+.painel-extra h2 {
+    font-size: 20px;
+
+    color: var(--vinho-escuro);
+
+    margin-bottom: 10px;
+}
+
+.painel-extra p {
+    font-size: 14px;
+
+    color: var(--texto-suave);
+
+    margin-bottom: 16px;
+    line-height: 1.6;
+}
+
+.painel-extra .campo-login {
+    margin-bottom: 16px;
+}
+
+.painel-extra button {
+    margin-top: 8px;
+}
+
+/* ANIMAÇÃO DOS PAINÉIS */
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* MENSAGENS DOS FORMULÁRIOS */
+
+.mensagem-login {
+    margin-top: 15px;
+
+    font-size: 14px;
+    font-weight: 650;
+
+    min-height: 1.5em;
+
+    text-align: center;
+}
+
+.mensagem-login.erro {
+    color: #a32d3d;
+}
+
+.mensagem-login.ok {
+    color: #39744a;
+}
+
+/* IMAGEM ILUSTRATIVA */
+
+.login-ilustracao {
+    text-align: center;
+    position: relative;
+}
+
+.login-ilustracao img {
+    width: 100%;
+
+    max-height: 470px;
+
+    object-fit: cover;
+
+    border-radius: 22px;
+
+    border: 4px solid white;
+
+    box-shadow:
+        0 14px 35px rgba(66, 27, 43, 0.15),
+        0 0 0 1px var(--dourado-claro);
+
+    transition: all 0.4s ease;
+}
+
+.login-ilustracao img:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 20px 40px rgba(66, 27, 43, 0.20);
+}
+
+.login-ilustracao figcaption {
+    margin-top: 18px;
+
+    color: var(--texto-suave);
+
+    font-size: 15px;
+    font-style: italic;
+}
+
+/* RODAPÉ */
+
+.login-rodape {
+    text-align: center;
+
+    font-size: 13px;
+    color: var(--texto-suave);
+
+    padding: 22px 20px;
+
+    border-top: 1px solid var(--borda);
+
+    background: rgba(255, 253, 249, 0.7);
+}
+
+/* RESPONSIVIDADE - TABLETS */
+
+@media (max-width: 860px) {
+
+    .login-principal {
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+
+        padding: 30px 22px;
+
+        max-width: 550px;
+    }
+
+    .login-ilustracao {
+        order: -1;
+    }
+
+    .login-ilustracao img {
+        max-width: 430px;
+        max-height: 260px;
+
+        margin: 0 auto;
+    }
+
+    .login-cartao {
+        padding: 32px 28px;
+    }
+}
+
+/* RESPONSIVIDADE - CELULARES */
+
+@media (max-width: 480px) {
+
+    .login-topo {
+        font-size: 11px;
+        letter-spacing: 0.7px;
+        padding: 10px 12px;
+    }
+
+    .login-principal {
+        padding: 22px 15px;
+        gap: 23px;
+    }
+
+    .login-cartao {
+        padding: 27px 20px;
+        border-radius: 16px;
+    }
+
+    .login-cabecalho img {
+        width: 72px;
+        height: 72px;
+    }
+
+    .login-cabecalho h1 {
+        font-size: 22px;
+    }
+
+    .login-cabecalho p {
+        font-size: 13px;
+    }
+
+    .campo-login input {
+        padding: 13px;
+        font-size: 14px;
+    }
+
+    .links-login {
+        justify-content: center;
+        flex-direction: column;
+        gap: 13px;
+    }
+
+    .login-ilustracao img {
+        max-height: 210px;
+        border-radius: 15px;
+    }
+
+    .login-ilustracao figcaption {
+        font-size: 13px;
+    }
+
+    .painel-extra {
+        padding: 18px;
+    }
+
+    .login-rodape {
+        font-size: 12px;
+        padding: 17px;
+    }
+}
+
+/* ACESSIBILIDADE */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation: none !important;
+        transition: none !important;
+        scroll-behavior: auto !important;
+    }
+}

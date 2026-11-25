@@ -1,0 +1,273 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Entrar - Portal dos Direitos Humanos</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body class="pagina-login" data-pagina="login">
+
+  
+    </a>
+
+    <div class="login-topo">
+        Portal demonstrativo de informação e cidadania
+    </div>
+
+    <main id="conteudo" class="login-principal">
+
+        <!-- Cartão de login -->
+        <div class="login-cartao">
+
+            <div class="login-cabecalho">
+
+                <img
+                    src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=300&q=85"
+                    alt="Grupo de pessoas reunidas"
+                    width="76"
+                    height="76"
+                    style="object-fit: cover; border-radius: 50%;"
+                >
+
+                <h1>Portal dos Direitos Humanos</h1>
+
+                <p>
+                    Informação, cidadania e igualdade para todos
+                </p>
+
+            </div>
+
+            <!-- Formulário de entrada -->
+            <form id="form-login" novalidate>
+
+                <div class="campo-login">
+
+                    <label for="login-email">
+                        E-mail
+                    </label>
+
+                    <input
+                        type="email"
+                        id="login-email"
+                        name="email"
+                        autocomplete="username"
+                        placeholder="seuemail@exemplo.com"
+                        required
+                        aria-required="true"
+                    >
+
+                </div>
+
+                <div class="campo-login">
+
+                    <label for="login-senha">
+                        Senha
+                    </label>
+
+                    <input
+                        type="password"
+                        id="login-senha"
+                        name="senha"
+                        autocomplete="current-password"
+                        placeholder="Digite sua senha"
+                        minlength="6"
+                        required
+                        aria-required="true"
+                    >
+
+                </div>
+
+                <button type="submit" class="botao botao-largo">
+                    Entrar
+                </button>
+
+                <p
+                    id="msg-login"
+                    class="mensagem-login"
+                    role="status"
+                    aria-live="polite">
+                </p>
+
+            </form>
+
+            <!-- Links auxiliares -->
+            <div class="links-login">
+
+                <a href="#recuperar" id="link-esqueci">
+                    Esqueceu sua senha?
+                </a>
+
+                <a href="#criar" id="link-criar">
+                    Criar conta
+                </a>
+
+            </div>
+
+            <!-- Painel de recuperação de senha -->
+            <div id="painel-recuperar" class="painel-extra" hidden>
+
+                <h2>Recuperar senha</h2>
+
+                <p>
+                    Informe o e-mail cadastrado. Este é um projeto
+                    demonstrativo, então nenhum e-mail será enviado.
+                </p>
+
+                <form id="form-recuperar" novalidate>
+
+                    <div class="campo-login">
+
+                        <label for="rec-email">
+                            E-mail
+                        </label>
+
+                        <input
+                            type="email"
+                            id="rec-email"
+                            name="email"
+                            autocomplete="email"
+                            placeholder="seuemail@exemplo.com"
+                        >
+
+                    </div>
+
+                    <button type="submit" class="botao">
+                        Enviar instruções
+                    </button>
+
+                    <button
+                        type="button"
+                        id="fechar-recuperar"
+                        class="botao botao-claro">
+                        Fechar
+                    </button>
+
+                    <p
+                        id="msg-recuperar"
+                        class="mensagem-login"
+                        role="status"
+                        aria-live="polite">
+                    </p>
+
+                </form>
+
+            </div>
+
+            <!-- Painel de criação de conta -->
+            <div id="painel-criar" class="painel-extra" hidden>
+
+                <h2>Criar conta</h2>
+
+                <p>
+                    Cadastro demonstrativo. Os dados não são salvos
+                    nem enviados a nenhum servidor.
+                </p>
+
+                <form id="form-criar" novalidate>
+
+                    <div class="campo-login">
+
+                        <label for="criar-nome">
+                            Nome completo
+                        </label>
+
+                        <input
+                            type="text"
+                            id="criar-nome"
+                            name="nome"
+                            autocomplete="name"
+                            placeholder="Seu nome"
+                        >
+
+                    </div>
+
+                    <div class="campo-login">
+
+                        <label for="criar-email">
+                            E-mail
+                        </label>
+
+                        <input
+                            type="email"
+                            id="criar-email"
+                            name="email"
+                            autocomplete="email"
+                            placeholder="seuemail@exemplo.com"
+                        >
+
+                    </div>
+
+                    <div class="campo-login">
+
+                        <label for="criar-senha">
+                            Senha (mínimo 6 caracteres)
+                        </label>
+
+                        <input
+                            type="password"
+                            id="criar-senha"
+                            name="senha"
+                            autocomplete="new-password"
+                            minlength="6"
+                        >
+
+                    </div>
+
+                    <button type="submit" class="botao botao-largo">
+                        Criar conta e entrar
+                    </button>
+
+                    <button
+                        type="button"
+                        id="fechar-criar"
+                        class="botao botao-claro botao-largo">
+                        Cancelar
+                    </button>
+
+                    <p
+                        id="msg-criar"
+                        class="mensagem-login"
+                        role="status"
+                        aria-live="polite">
+                    </p>
+
+                </form>
+
+            </div>
+
+        </div>
+
+        <!-- Imagem ilustrativa -->
+        <figure class="login-ilustracao">
+
+            <img
+                src="https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?auto=format&fit=crop&w=1200&q=85"
+                alt="Pessoas reunidas em uma atividade coletiva, representando união e diversidade"
+                loading="lazy"
+                style="display: block; width: 100%; height: auto; border-radius: 16px;"
+            >
+
+            <figcaption>
+                Igualdade e diversidade: todas as pessoas têm direitos.
+            </figcaption>
+
+        </figure>
+
+    </main>
+
+    <!-- Rodapé -->
+    <p class="login-rodape">
+        © 2026 Portal dos Direitos Humanos. Projeto de demonstração.
+    </p>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
